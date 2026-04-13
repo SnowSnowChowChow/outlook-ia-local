@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+  xsi:type="MailApp">
+  <Id>52737d1a-60b3-489c-89ee-f31f1bb7ef77</Id>
+  <Version>1.3.0.0</Version>
+  <ProviderName>DISP Grand Est</ProviderName>
+  <DefaultLocale>fr-FR</DefaultLocale>
+  <DisplayName DefaultValue="Assistant IA de rédaction" />
+  <Description DefaultValue="Rédige, corrige, reformule et résume les mails Outlook en local avec Qwen via WebLLM." />
+  <IconUrl DefaultValue="https://snowsnowchowchow.github.io/outlook-ia-local/assets/icon.svg" />
+  <HighResolutionIconUrl DefaultValue="https://snowsnowchowchow.github.io/outlook-ia-local/assets/icon.svg" />
+  <SupportUrl DefaultValue="https://snowsnowchowchow.github.io/outlook-ia-local/taskpane.html" />
+  <AppDomains>
+    <AppDomain>https://snowsnowchowchow.github.io</AppDomain>
+  </AppDomains>
+  <Hosts>
+    <Host Name="Mailbox" />
+  </Hosts>
+  <Requirements>
+    <Sets>
+      <Set Name="Mailbox" MinVersion="1.1" />
+    </Sets>
+  </Requirements>
+  <FormSettings>
+    <Form xsi:type="ItemRead">
+      <DesktopSettings>
+        <SourceLocation DefaultValue="https://snowsnowchowchow.github.io/outlook-ia-local/taskpane.html" />
+        <RequestedHeight>450</RequestedHeight>
+      </DesktopSettings>
+    </Form>
+    <Form xsi:type="ItemEdit">
+      <DesktopSettings>
+        <SourceLocation DefaultValue="https://snowsnowchowchow.github.io/outlook-ia-local/taskpane.html" />
+      </DesktopSettings>
+    </Form>
+  </FormSettings>
+  <Permissions>ReadWriteItem</Permissions>
+  <Rule xsi:type="RuleCollection" Mode="Or">
+    <Rule xsi:type="ItemIs" ItemType="Message" FormType="Edit" />
+    <Rule xsi:type="ItemIs" ItemType="Message" FormType="Read" />
+  </Rule>
+  <DisableEntityHighlighting>false</DisableEntityHighlighting>
+</OfficeApp>
