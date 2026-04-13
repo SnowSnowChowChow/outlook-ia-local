@@ -4,7 +4,7 @@
   xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
   xsi:type="MailApp">
   <Id>52737d1a-60b3-489c-89ee-f31f1bb7ef77</Id>
-  <Version>1.1.0.0</Version>
+  <Version>1.2.0.0</Version>
   <ProviderName>DISP Grand Est</ProviderName>
   <DefaultLocale>fr-FR</DefaultLocale>
   <DisplayName DefaultValue="Assistant IA de rédaction" />
@@ -24,26 +24,32 @@
     </Sets>
   </Requirements>
   <FormSettings>
-    <Form xsi:type="ItemEdit">
-      <DesktopSettings>
-        <SourceLocation DefaultValue="https://snowsnowchowchow.github.io/outlook-ia-local/taskpane.html" />
-      </DesktopSettings>
-      <TabletSettings>
-        <SourceLocation DefaultValue="https://snowsnowchowchow.github.io/outlook-ia-local/taskpane.html" />
-      </TabletSettings>
-      <PhoneSettings>
-        <SourceLocation DefaultValue="https://snowsnowchowchow.github.io/outlook-ia-local/taskpane.html" />
-      </PhoneSettings>
-    </Form>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
         <SourceLocation DefaultValue="https://snowsnowchowchow.github.io/outlook-ia-local/taskpane.html" />
+        <RequestedHeight>450</RequestedHeight>
       </DesktopSettings>
       <TabletSettings>
         <SourceLocation DefaultValue="https://snowsnowchowchow.github.io/outlook-ia-local/taskpane.html" />
+        <RequestedHeight>450</RequestedHeight>
       </TabletSettings>
       <PhoneSettings>
         <SourceLocation DefaultValue="https://snowsnowchowchow.github.io/outlook-ia-local/taskpane.html" />
+        <RequestedHeight>450</RequestedHeight>
+      </PhoneSettings>
+    </Form>
+    <Form xsi:type="ItemEdit">
+      <DesktopSettings>
+        <SourceLocation DefaultValue="https://snowsnowchowchow.github.io/outlook-ia-local/taskpane.html" />
+        <RequestedHeight>450</RequestedHeight>
+      </DesktopSettings>
+      <TabletSettings>
+        <SourceLocation DefaultValue="https://snowsnowchowchow.github.io/outlook-ia-local/taskpane.html" />
+        <RequestedHeight>450</RequestedHeight>
+      </TabletSettings>
+      <PhoneSettings>
+        <SourceLocation DefaultValue="https://snowsnowchowchow.github.io/outlook-ia-local/taskpane.html" />
+        <RequestedHeight>450</RequestedHeight>
       </PhoneSettings>
     </Form>
   </FormSettings>
