@@ -1,0 +1,1 @@
+{"version":3,"file":"commands-vcr_BlJT.js","sources":["../../src/commands.ts"],"sourcesContent":["Office.onReady(() => undefined);\n\nexport {};\n\n"],"names":[],"mappings":"6CAAA,OAAO,QAAQ,IAAA,EAAe"}
